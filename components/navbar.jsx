@@ -5,13 +5,13 @@ import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from "react-icons/ai";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 // import { useRouter } from 'next/router';
-import NavLogo from "../public/assets/navLogo.png";
+import NavLogo from "../public/assets/MeMoji-Mac.png";
 
 const Navbar = () => {
 	const [nav, setNav] = useState(false);
 	const [shadow, setShadow] = useState(false);
-	const [navBg, setNavBg] = useState("#ecf0f3");
-	const [linkColor, setLinkColor] = useState("#1f2937");
+	const [navBg, setNavBg] = useState("#222222");
+	const [linkColor, setLinkColor] = useState("#F7F7F7");
 	// const [position, setPosition] = useState('fixed')
 	// const router = useRouter();
 
@@ -53,17 +53,18 @@ const Navbar = () => {
 					? "fixed w-full h-20 shadow-xl z-[100] ease-in-out duration-300"
 					: "fixed w-full h-20 z-[100]"
 			}>
-			<div className='flex justify-between items-center w-full h-full px-2 2xl:px-16'>
+			<div className='flex justify-between items-center w-full h-full px-8 2xl:px-16'>
 				<Link href='/'>
-					<a>
+					{/* <a>
 						<Image
 							src={NavLogo}
 							alt='/'
-							width='125'
-							height='50'
+							width='100%'
+							height='100%'
 							className='cursor-pointer'
 						/>
-					</a>
+					</a> */}
+					<p>William Vernon</p>
 				</Link>
 				<div>
 					<ul style={{ color: `${linkColor}` }} className='hidden md:flex p-5'>
@@ -100,13 +101,13 @@ const Navbar = () => {
 			{/* Overlay */}
 			<div
 				className={
-					nav ? "md:hidden fixed left-0 top-0 w-full h-screen bg-black/70" : ""
+					nav ? "md:hidden fixed left-0 top-0 w-full h-screen bg-[#222222]]" : ""
 				}>
 				{/* Side Drawer Menu */}
 				<div
 					className={
 						nav
-							? " fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#ecf0f3] p-10 ease-in duration-500"
+							? " fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#F7F7F7] p-10 ease-in duration-500"
 							: "fixed left-[-100%] top-0 p-10 ease-in duration-500"
 					}>
 					<div>
@@ -162,7 +163,7 @@ const Navbar = () => {
 							</Link>
 						</ul>
 						<div className='pt-40'>
-							<p className='uppercase tracking-widest text-[#5651e5]'>
+							<p className='uppercase tracking-widest text-[#F7F7F7]'>
 								Let&#39;s Connect
 							</p>
 							<div className='flex items-center justify-between my-4 w-full sm:w-[80%]'>
