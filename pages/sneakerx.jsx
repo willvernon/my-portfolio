@@ -26,6 +26,7 @@ const sneakerx = () => {
 				<div className='col-span-4'>
 					<p>Project</p>
 					<h2>Overview</h2>
+          <br />
 					<p>
 						This is a sneaker and fashion application with the
 						ability to buy & Sell high end collectibles and fashion
@@ -35,6 +36,7 @@ const sneakerx = () => {
 						Collections' tab for other to see and also make offers
 						on items if the owner allows.
 					</p>
+          <br />
 					<a
 						href='https://github.com/Vern111/Sneakerx'
 						target='_blank'
