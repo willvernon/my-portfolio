@@ -5,6 +5,7 @@ import Main from '../components/Main'
 import NavBar from '../components/Navbar'
 import Projects from '../components/Projects'
 import Skills from '../components/Skills'
+import NewNavbar from '../components/NewNavbar'
 
 
 export default function Home() {
@@ -15,7 +16,7 @@ export default function Home() {
         <meta name="description" content="I’m a front-end web developer specializing in building (and designing) exceptional digital experiences." />
         <link rel="icon" href="/assets/MeMoji-Mac.png" />
       </Head>
-      <NavBar />
+      <NewNavbar />
     <Main />
     <About />
     <Skills />
