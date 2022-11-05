@@ -5,7 +5,7 @@ import { AiOutlineMail } from 'react-icons/ai';
 import { BsFillPersonLinesFill } from 'react-icons/bs';
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
 import { HiOutlineChevronDoubleUp } from 'react-icons/hi';
-import ContactImg from '../public/assets/contact.jpg';
+import ContactImg from '../public/assets/laptop.jpeg';
 
 const Contact = () => {
   return (
@@ -19,9 +19,9 @@ const Contact = () => {
           {/* left */}
           <div className='col-span-3 lg:col-span-2 w-full h-full shadow-xl shadow-[#00000093]  rounded-xl p-4'>
             <div className='lg:py-8 px-2 h-full '>
-              <div>
+              <div className=' '>
                 <Image
-                  className='rounded-xl hover:scale-105 ease-in duration-300'
+                  className='rounded-3xl hover:scale-110 ease-in duration-300 '
                   src={ContactImg}
                   alt='/'
                 />
