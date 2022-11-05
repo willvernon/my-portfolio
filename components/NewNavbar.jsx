@@ -6,6 +6,8 @@ import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
 import { BsFillPersonLinesFill } from 'react-icons/bs';
 // import { useRouter } from 'next/router';
 import NavLogo from '../public/assets/MeMoji-Mac.png';
+import DayNightToggle from 'react-day-and-night-toggle';
+import { useTheme } from 'next-themes';
 
 const NewNavbar = () => {
 	const [nav, setNav] = useState(false);
@@ -45,6 +47,16 @@ const NewNavbar = () => {
 		window.addEventListener('scroll', handleShadow);
 	}, []);
 
+	const { theme, setTheme } = useTheme();
+	const [isDarkMode, setIsDarkMode] = useState();
+
+	if (isDarkMode == true) {
+		setTheme('dark');
+	} else {
+		setTheme('light');
+	}
+	console.log(useTheme);
+
 	return (
 		<header className='fixed top-0 w-screen'>
 			<div class='corner'></div>
@@ -60,17 +72,24 @@ const NewNavbar = () => {
 							: '  z-[100]'
 					}
 				>
-					<li className='ml-2 text-sm  hover:border-b'>
+					<li className=' text-sm  hover:border-b'>
 						<Link href='/'>Home</Link>
 					</li>
-					<li className='ml-2 text-sm  hover:border-b'>
+					<li className=' text-sm  hover:border-b'>
 						<Link href='/#projects'>Projects</Link>
 					</li>
-					<li className='ml-2 text-sm  hover:border-b'>
+					<li className=' text-sm  hover:border-b'>
 						<Link href='/resume'>Resume</Link>
 					</li>
-					<li className='ml-2 text-sm  hover:border-b'>
+					<li className=' text-sm  hover:border-b'>
 						<Link href='/#contact'>Contact</Link>
+					</li>
+					<li>
+						<DayNightToggle
+							onChange={() => setIsDarkMode(!isDarkMode)}
+							checked={isDarkMode}
+							className='mt-2.5 ml-4'
+						/>
 					</li>
 				</ul>
 				<svg viewBox='0 0 2 3' aria-hidden='true'>

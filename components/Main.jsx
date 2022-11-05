@@ -1,21 +1,21 @@
 import React, { useState } from 'react';
 import { AiOutlineMail } from 'react-icons/ai';
 import { BsFillPersonLinesFill } from 'react-icons/bs';
-import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
+import { FaBlackTie, FaGithub, FaLinkedinIn } from 'react-icons/fa';
 import Typewriter from 'typewriter-effect';
-import DayNightToggle from 'react-day-and-night-toggle';
+
 
 const Main = () => {
-	const [isDarkMode, setIsDarkMode] = useState(false);
+	
 	return (
 		<div className='w-full h-screen text-center'>
 			<div className='max-w-[1240] w-full h-full mx-auto p-2 flex justify-center items-center'>
 				<div>
-					<h1 className='py-4 text-[#F7F7F7]'>
+					<h1 className='py-4 dark:text-[#F7F7F7] text-gray-600'>
 						Hi! I'm{' '}
 						<span className='text-[#e64c33]'>Will Vernon</span>
 					</h1>
-					<h2 className='py-4 text-gray-400'>
+					<h2 className='py-4 dark:text-[#F7F7F7] text-gray-600'>
 						A Front-End Web Developer
 					</h2>
 					{/* <p className='py-4 text-[#F7F7F7] max-w-[70%] m-auto'>
@@ -41,19 +41,18 @@ const Main = () => {
 							delay: 100,
 						}}
 					/>
-					
 
-					<div className='flex items-center justify-between max-w-[330px] m-auto py-4'>
-						<div className='rounded-full shadow-md shadow-gray-400 p-4 cursor-pointer hover:scale-110 ease-in duration-300'>
+					<div className='flex items-center justify-between max-w-[480px] m-auto py-24'>
+						<div className='rounded-full shadow-md dark:shadow-gray-600 shadow-gray-400 dark:text-[#F7F7F7] text-gray-600 px-4 py-2 cursor-pointer hover:scale-110 ease-in duration-300'>
 							<FaLinkedinIn />
 						</div>
-						<div className='rounded-full shadow-md shadow-gray-400 p-4 cursor-pointer hover:scale-110 ease-in duration-300'>
+						<div className='rounded-full shadow-md shadow-gray-400 dark:text-[#F7F7F7] text-gray-600 px-4 py-2  cursor-pointer hover:scale-110 ease-in duration-300'>
 							<FaGithub />
 						</div>
-						<div className='rounded-full shadow-md shadow-gray-400 p-4 cursor-pointer hover:scale-110 ease-in duration-300'>
+						<div className='rounded-full shadow-md shadow-gray-400 dark:text-[#F7F7F7] text-gray-600 px-4 py-2  cursor-pointer hover:scale-110 ease-in duration-300'>
 							<AiOutlineMail />
 						</div>
-						<div className='rounded-full shadow-md shadow-gray-400 p-4 cursor-pointer hover:scale-110 ease-in duration-300'>
+						<div className='rounded-full shadow-md shadow-gray-400 dark:text-[#F7F7F7] text-gray-600 px-4 py-2  cursor-pointer hover:scale-110 ease-in duration-300'>
 							<BsFillPersonLinesFill />
 						</div>
 					</div>
