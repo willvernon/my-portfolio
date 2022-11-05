@@ -9,6 +9,8 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@react-hook/window-size": "^3.1.1",
+    "@rooks/use-window-size": "^4.11.2",
     "next": "12.3.1",
     "next-themes": "^0.2.1",
     "react": "18.2.0",
@@ -16,6 +18,8 @@
     "react-dom": "18.2.0",
     "react-icons": "^4.4.0",
     "react-interactive-blob": "^0.0.1",
+    "react-particle-image": "^1.0.2",
+    "rooks": "^7.4.1",
     "typewriter-effect": "^2.19.0"
   },
   "devDependencies": {

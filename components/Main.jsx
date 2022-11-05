@@ -3,12 +3,13 @@ import { AiOutlineMail } from 'react-icons/ai';
 import { BsFillPersonLinesFill } from 'react-icons/bs';
 import { FaBlackTie, FaGithub, FaLinkedinIn } from 'react-icons/fa';
 import Typewriter from 'typewriter-effect';
+import ReactParticles from './TS/ReactParticles';
 
 const Main = () => {
 	return (
 		<div className='w-full h-screen text-center '>
-			<div className='max-w-[1240] w-full h-full mx-auto p-2 flex justify-center items-center'>
-				<div>
+			<div className='max-w-[1240] w-full h-full mx-auto p-2 flex justify-center items-center '>
+				<div className='z-[100]'>
 					<h1 className='py-0 text-gray-700 dark:text-white'>
 						Hi! I'm{' '}
 						<span className='text-[#e64c33]'>Will Vernon</span>
@@ -16,6 +17,7 @@ const Main = () => {
 					<h2 className='pb-12 pt-4 text-gray-700 dark:text-white'>
 						A Front-End Web Developer
 					</h2>
+
 					<div className='pt-8'>
 						<Typewriter
 							options={{
