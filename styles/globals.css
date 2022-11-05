@@ -12,7 +12,7 @@ html {
 }
 @layer base {
   body {
-@apply dark:bg-[#222222]  dark:text-[#F7F7F7] text-gray-700 dark:text-white
+@apply dark:bg-[#222222]  dark:text-[#F7F7F7] 
 	
   }
 

@@ -17,9 +17,9 @@ const Skills = () => {
 				<h1 className='text-4xl tracking-wide uppercase text-[#F12307]'>
 					Skills
 				</h1>
-				<h3 className='text-xl py-4 text-gray-700 dark:text-white'>
+				<p className='text-xl py-4 text-gray-700 dark:text-white'>
 					What I Can Do
-				</h3>
+				</p>
 				<div className='grid grid-cols-2 lg:grid-cols-4 gap-8 '>
 					<div className='p-6 shadow-xl shadow-[#7c7c7c] dark:shadow-[#404040] rounded-xl hover:scale-105 ease-in duration-300 bg-gray-600 dark:bg-gray-300  '>
 						<div className='grid grid-cols-2 gap-4 justify-center items-center'>
@@ -32,7 +32,7 @@ const Skills = () => {
 								/>
 							</div>
 							<div className='flex flex-col items-center justify-center dark:text-gray-700 text-white'>
-								<h3 className='text-2xl'>HTML</h3>
+								<p className='text-2xl'>HTML</p>
 							</div>
 						</div>
 					</div>
@@ -47,7 +47,7 @@ const Skills = () => {
 								/>
 							</div>
 							<div className='flex flex-col items-center justify-center dark:text-gray-700 text-white'>
-								<h3 className='text-2xl'>CSS</h3>
+								<p className='text-2xl'>CSS</p>
 							</div>
 						</div>
 					</div>
@@ -62,7 +62,7 @@ const Skills = () => {
 								/>
 							</div>
 							<div className='flex flex-col items-center justify-center dark:text-gray-700 text-white'>
-								<h3 className='text-2xl'>JavaScript</h3>
+								<p className='text-2xl'>JavaScript</p>
 							</div>
 						</div>
 					</div>
@@ -77,7 +77,7 @@ const Skills = () => {
 								/>
 							</div>
 							<div className='flex flex-col items-center justify-center dark:text-gray-700 text-white'>
-								<h3 className='text-2xl'>React</h3>
+								<p className='text-2xl'>React</p>
 							</div>
 						</div>
 					</div>
@@ -92,7 +92,7 @@ const Skills = () => {
 								/>
 							</div>
 							<div className='flex flex-col items-center justify-center dark:text-gray-700 text-white'>
-								<h3 className='text-2xl'>Tailwind</h3>
+								<p className='text-2xl'>Tailwind</p>
 							</div>
 						</div>
 					</div>
@@ -107,7 +107,7 @@ const Skills = () => {
 								/>
 							</div>
 							<div className='flex flex-col items-center justify-center dark:text-gray-700 text-white'>
-								<h3 className='text-2xl'>Firebase</h3>
+								<p className='text-2xl'>Firebase</p>
 							</div>
 						</div>
 					</div>
@@ -122,7 +122,7 @@ const Skills = () => {
 								/>
 							</div>
 							<div className='flex flex-col items-center justify-center dark:text-gray-700 text-white'>
-								<h3 className='text-2xl'>Github</h3>
+								<p className='text-2xl'>Github</p>
 							</div>
 						</div>
 					</div>
@@ -137,7 +137,7 @@ const Skills = () => {
 								/>
 							</div>
 							<div className='flex flex-col items-center justify-center dark:text-gray-700 text-white'>
-								<h2 className='text-2xl'>Next</h2>
+								<p className='text-2xl'>Next</p>
 							</div>
 						</div>
 					</div>
