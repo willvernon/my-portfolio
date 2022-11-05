@@ -61,17 +61,18 @@ const NewNavbar = () => {
 		<header className='fixed top-0 w-screen z-[100]'>
 			<div className='corner'></div>
 
-			<nav>
+			<nav
+			//Shadow on scroll
+			// className={
+			// 	shadow
+			// 		? 'shadow-xl  z-[100] ease-in-out duration-300'
+			// 		: '  z-[100]'
+			// }
+			>
 				<svg viewBox='0 0 2 3' aria-hidden='true'>
 					<path d='M0,0 L1,2 C1.5,3 1.5,3 2,3 L2,0 Z' />
 				</svg>
-				<ul
-					className={
-						shadow
-							? 'shadow-xl z-[100] ease-in-out duration-300'
-							: '  z-[100]'
-					}
-				>
+				<ul>
 					<li className=' text-sm  hover:border-b'>
 						<Link href='/'>Home</Link>
 					</li>

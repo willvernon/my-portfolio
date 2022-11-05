@@ -38,7 +38,7 @@ const about = () => {
 						Check out some of my latest projects.
 					</h3>
 				</div>
-				<div className='w-full h-auto my-[35%]'>
+				<div className='invisible md:visible w-full h-auto my-[35%]'>
 					<img src='/assets/MeMoji.jpg' alt='/' />
 				</div>
 			</div>
