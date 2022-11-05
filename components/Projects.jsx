@@ -15,7 +15,9 @@ const Projects = () => {
 				<h1 className='text-4xl tracking-wide uppercase text-[#F12307]'>
 					Projects
 				</h1>
-				<h3 className='py-4'>Some Things I&apos;ve Built</h3>
+				<h3 className='py-4 text-xl text-gray-700 dark:text-white'>
+					Some Things I&apos;ve Built
+				</h3>
 				<div className='grid md:grid-cols-2 gap-8 '>
 					<ProjectItem
 						title='SneakerX'

@@ -12,24 +12,24 @@ html {
 }
 @layer base {
   body {
-@apply dark:bg-[#222222]  dark:text-[#F7F7F7] tracking-wide
+@apply dark:bg-[#222222]  dark:text-[#F7F7F7] text-gray-700 dark:text-white
 	
   }
 
   h1, h2, h3, h4, h5, h6 {
-    @apply font-bold
+    @apply font-bold text-gray-700 dark:text-white
   }
 
   h1 {
-    @apply text-4xl sm:text-5xl md:text-6xl 
+    @apply text-4xl sm:text-5xl md:text-6xl text-gray-700 dark:text-white
   }
 
   h2 {
-    @apply text-3xl sm:text-4xl 
+    @apply text-3xl sm:text-4xl text-gray-700 dark:text-white
   }
   
   li {
-    @apply cursor-pointer
+    @apply cursor-pointer text-gray-700 dark:text-white
   }
 
   button {
