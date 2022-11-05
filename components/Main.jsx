@@ -9,7 +9,7 @@ const Main = () => {
 	return (
 		<div className='w-full h-screen text-center '>
 			<div className='max-w-[1240] w-full h-full mx-auto p-2 flex justify-center items-center '>
-				<div className='z-[100]'>
+				<div className=''>
 					<h1 className='py-0 text-gray-700 dark:text-white'>
 						Hi! I'm{' '}
 						<span className='text-[#e64c33]'>Will Vernon</span>
