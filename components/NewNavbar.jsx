@@ -59,7 +59,7 @@ const NewNavbar = () => {
 
 	return (
 		<header className='fixed top-0 w-screen'>
-			<div class='corner'></div>
+			<div className='corner'></div>
 
 			<nav>
 				<svg viewBox='0 0 2 3' aria-hidden='true'>
@@ -97,7 +97,7 @@ const NewNavbar = () => {
 				</svg>
 			</nav>
 
-			<div class='corner'>
+			<div className='corner'>
 				{/* TODO put something else here? github link? */}
 			</div>
 		</header>
