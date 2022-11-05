@@ -17,85 +17,127 @@ const Skills = () => {
 				<h1 className='text-4xl tracking-wide uppercase text-[#F12307]'>
 					Skills
 				</h1>
-				<h3 className='text-xl py-4'>What I Can Do</h3>
+				<h3 className='text-xl py-4 text-gray-700 dark:text-white'>
+					What I Can Do
+				</h3>
 				<div className='grid grid-cols-2 lg:grid-cols-4 gap-8 '>
-					<div className='p-6 shadow-xl shadow-[#2c2c2c] rounded-xl hover:scale-105 ease-in duration-300 bg-[#3d3d3dac]'>
+					<div className='p-6 shadow-xl shadow-[#7c7c7c] dark:shadow-[#404040] rounded-xl hover:scale-105 ease-in duration-300 bg-gray-600 dark:bg-gray-300  '>
 						<div className='grid grid-cols-2 gap-4 justify-center items-center'>
 							<div className='m-auto'>
-								<Image src={Html} width='64px' height='64px' alt='/' />
+								<Image
+									src={Html}
+									width='64px'
+									height='64px'
+									alt='/'
+								/>
 							</div>
-							<div className='flex flex-col items-center justify-center'>
-								<h3>HTML</h3>
+							<div className='flex flex-col items-center justify-center dark:text-gray-700 text-white'>
+								<h3 className='text-2xl'>HTML</h3>
 							</div>
 						</div>
 					</div>
-					<div className='p-6 shadow-xl shadow-[#2c2c2c] rounded-xl hover:scale-105 ease-in duration-300 bg-[#3d3d3dac]'>
+					<div className='p-6 shadow-xl shadow-[#7c7c7c] dark:shadow-[#404040] rounded-xl hover:scale-105 ease-in duration-300 bg-gray-600 dark:bg-gray-300'>
 						<div className='grid grid-cols-2 gap-4 justify-center items-center'>
 							<div className='m-auto'>
-								<Image src={Css} width='64px' height='64px' alt='/' />
+								<Image
+									src={Css}
+									width='64px'
+									height='64px'
+									alt='/'
+								/>
 							</div>
-							<div className='flex flex-col items-center justify-center'>
-								<h3>CSS</h3>
+							<div className='flex flex-col items-center justify-center dark:text-gray-700 text-white'>
+								<h3 className='text-2xl'>CSS</h3>
 							</div>
 						</div>
 					</div>
-					<div className='p-6 shadow-xl shadow-[#2c2c2c] rounded-xl hover:scale-105 ease-in duration-300 bg-[#3d3d3dac]'>
+					<div className='p-6 shadow-xl shadow-[#7c7c7c] dark:shadow-[#404040] rounded-xl hover:scale-105 ease-in duration-300 bg-gray-600 dark:bg-gray-300'>
 						<div className='grid grid-cols-2 gap-4 justify-center items-center'>
 							<div className='m-auto'>
-								<Image src={Javascript} width='64px' height='64px' alt='/' />
+								<Image
+									src={Javascript}
+									width='64px'
+									height='64px'
+									alt='/'
+								/>
 							</div>
-							<div className='flex flex-col items-center justify-center'>
-								<h3>JavaScript</h3>
+							<div className='flex flex-col items-center justify-center dark:text-gray-700 text-white'>
+								<h3 className='text-2xl'>JavaScript</h3>
 							</div>
 						</div>
 					</div>
-					<div className='p-6 shadow-xl shadow-[#2c2c2c] rounded-xl hover:scale-105 ease-in duration-300 bg-[#3d3d3dac]'>
+					<div className='p-6 shadow-xl shadow-[#7c7c7c] dark:shadow-[#404040] rounded-xl hover:scale-105 ease-in duration-300 bg-gray-600 dark:bg-gray-300'>
 						<div className='grid grid-cols-2 gap-4 justify-center items-center'>
 							<div className='m-auto'>
-								<Image src={ReactImg} width='64px' height='64px' alt='/' />
+								<Image
+									src={ReactImg}
+									width='64px'
+									height='64px'
+									alt='/'
+								/>
 							</div>
-							<div className='flex flex-col items-center justify-center'>
-								<h3>React</h3>
+							<div className='flex flex-col items-center justify-center dark:text-gray-700 text-white'>
+								<h3 className='text-2xl'>React</h3>
 							</div>
 						</div>
 					</div>
-					<div className='p-6 shadow-xl shadow-[#2c2c2c] rounded-xl hover:scale-105 ease-in duration-300 bg-[#3d3d3dac]'>
+					<div className='p-6 shadow-xl shadow-[#7c7c7c] dark:shadow-[#404040] rounded-xl hover:scale-105 ease-in duration-300 bg-gray-600 dark:bg-gray-300'>
 						<div className='grid grid-cols-2 gap-4 justify-center items-center'>
 							<div className='m-auto'>
-								<Image src={Tailwind} width='64px' height='64px' alt='/' />
+								<Image
+									src={Tailwind}
+									width='64px'
+									height='64px'
+									alt='/'
+								/>
 							</div>
-							<div className='flex flex-col items-center justify-center'>
-								<h3>Tailwind</h3>
+							<div className='flex flex-col items-center justify-center dark:text-gray-700 text-white'>
+								<h3 className='text-2xl'>Tailwind</h3>
 							</div>
 						</div>
 					</div>
-					<div className='p-6 shadow-xl shadow-[#2c2c2c] rounded-xl hover:scale-105 ease-in duration-300 bg-[#3d3d3dac]'>
+					<div className='p-6 shadow-xl shadow-[#7c7c7c] dark:shadow-[#404040] rounded-xl hover:scale-105 ease-in duration-300 bg-gray-600 dark:bg-gray-300'>
 						<div className='grid grid-cols-2 gap-4 justify-center items-center'>
 							<div className='m-auto'>
-								<Image src={Firebase} width='64px' height='64px' alt='/' />
+								<Image
+									src={Firebase}
+									width='64px'
+									height='64px'
+									alt='/'
+								/>
 							</div>
-							<div className='flex flex-col items-center justify-center'>
-								<h3>Firebase</h3>
+							<div className='flex flex-col items-center justify-center dark:text-gray-700 text-white'>
+								<h3 className='text-2xl'>Firebase</h3>
 							</div>
 						</div>
 					</div>
-					<div className='p-6 shadow-xl shadow-[#2c2c2c] rounded-xl hover:scale-105 ease-in duration-300 bg-[#3d3d3dac]'>
+					<div className='p-6 shadow-xl shadow-[#7c7c7c] dark:shadow-[#404040] rounded-xl hover:scale-105 ease-in duration-300 bg-gray-600 dark:bg-gray-300'>
 						<div className='grid grid-cols-2 gap-4 justify-center items-center'>
 							<div className='m-auto'>
-								<Image src={Github} width='64px' height='64px' alt='/' />
+								<Image
+									src={Github}
+									width='64px'
+									height='64px'
+									alt='/'
+								/>
 							</div>
-							<div className='flex flex-col items-center justify-center'>
-								<h3>Github</h3>
+							<div className='flex flex-col items-center justify-center dark:text-gray-700 text-white'>
+								<h3 className='text-2xl'>Github</h3>
 							</div>
 						</div>
 					</div>
-					<div className='p-6 shadow-xl shadow-[#2c2c2c] rounded-xl hover:scale-105 ease-in duration-300 bg-[#3d3d3dac]'>
+					<div className='p-6 shadow-xl shadow-[#7c7c7c] dark:shadow-[#404040] rounded-xl hover:scale-105 ease-in duration-300 bg-gray-600 dark:bg-gray-300'>
 						<div className='grid grid-cols-2 gap-4 justify-center items-center'>
 							<div className='m-auto'>
-								<Image src={NextJS} width='64px' height='64px' alt='/' />
+								<Image
+									src={NextJS}
+									width='64px'
+									height='64px'
+									alt='/'
+								/>
 							</div>
-							<div className='flex flex-col items-center justify-center'>
-								<h3>Next</h3>
+							<div className='flex flex-col items-center justify-center dark:text-gray-700 text-white'>
+								<h2 className='text-2xl'>Next</h2>
 							</div>
 						</div>
 					</div>
