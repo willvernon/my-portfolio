@@ -37,51 +37,51 @@ const NewNavbar = () => {
 	console.log(useTheme);
 
 	return (
-		<header class={classes.header}>
-			<div class={classes.corner}></div>
+		<header className='flex justify-between'>
+			<div className='block w-16 h-12'></div>
 
-			<nav class={classes.nav} className='ml-[5p] '>
-				<svg class={classes.svg} viewBox='0 0 2 3' aria-hidden='true'>
+			<nav className='flex justify-center  ml-[5p] '>
+				<svg
+					className='w-8 h-12 block overflow-hidden '
+					viewBox='0 0 2 3'
+					aria-hidden='true'
+				>
 					<path
-						class={classes.path}
+						className='fill-white'
 						d='M0,0 L1,2 C1.5,3 1.5,3 2,3 L2,0 Z'
 					/>
 				</svg>
-				<ul class={classes.ul} className=''>
-					<li class={classes.li} className=' text-sm hover:border-b'>
-						<Link class={classes.a} href='/'>
-							Home
-						</Link>
+				<ul className='flex relative justify-center items-center bg-white bg-contain p-0 m-0 h-12'>
+					<li className=' relative px-2 text-sm hover:border-t  '>
+						<Link href='/'>Home</Link>
 					</li>
-					<li class={classes.li} className=' text-sm  hover:border-b'>
-						<Link class={classes.a} href='/#projects'>
-							Projects
-						</Link>
+					<li className=' relative px-2 text-sm hover:border-t  '>
+						<Link href='/#projects'>Projects</Link>
 					</li>
-					<li class={classes.li} className=' text-sm  hover:border-b'>
-						<Link class={classes.a} href='/resume'>
-							Resume
-						</Link>
+					<li className=' relative px-2 text-sm hover:border-t  '>
+						<Link href='/resume'>Resume</Link>
 					</li>
-					<li class={classes.li} className=' text-sm  hover:border-b'>
-						<Link class={classes.a} href='/#contact'>
-							My Info
-						</Link>
+					<li className=' relative px-2 text-sm hover:border-t  '>
+						<Link href='/#contact'>My Info</Link>
 					</li>
 				</ul>
-				<svg class={classes.svg} viewBox='0 0 2 3' aria-hidden='true'>
+				<svg
+					className='w-8 h-12 block overflow-hidden'
+					viewBox='0 0 2 3'
+					aria-hidden='true'
+				>
 					<path
-						class={classes.path}
+						className='fill-white'
 						d='M0,0 L0,3 C0.5,3 0.5,3 1,2 L2,0 Z'
 					/>
 				</svg>
 			</nav>
 
-			<div className='-ml-12 mr-12 invisible md:visible'>
+			<div className=' invisible md:visible  w-24 h-12'>
 				<DayNightToggle
 					onChange={() => setIsDarkMode(!isDarkMode)}
 					checked={isDarkMode}
-					className='mt-2.5 ml-4'
+					className='mt-2.5 ml-4 flex align-center justify-center w-[100%] h-[100%] '
 				/>
 				{/* TODO put something else here? github link? */}
 			</div>
