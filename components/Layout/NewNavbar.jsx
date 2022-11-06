@@ -3,7 +3,6 @@ import React, { useState, useEffect } from 'react';
 // import { useRouter } from 'next/router';
 import DayNightToggle from 'react-day-and-night-toggle';
 import { useTheme } from 'next-themes';
-import classes from '../Layout/NewNavbar.module.css';
 
 const NewNavbar = () => {
 	const [nav, setNav] = useState(false);
@@ -37,7 +36,7 @@ const NewNavbar = () => {
 	console.log(useTheme);
 
 	return (
-		<header className='flex justify-between'>
+		<header className='flex justify-between invisible md:visible'>
 			<div className='block w-16 h-12'></div>
 
 			<nav className='flex justify-center  ml-[5p] '>
@@ -52,16 +51,16 @@ const NewNavbar = () => {
 					/>
 				</svg>
 				<ul className='flex relative justify-center items-center bg-white bg-contain p-0 m-0 h-12'>
-					<li className=' relative px-2 text-sm hover:border-t  '>
+					<li className=' relative px-2 text-sm hover:border-t dark:text-black '>
 						<Link href='/'>Home</Link>
 					</li>
-					<li className=' relative px-2 text-sm hover:border-t  '>
+					<li className=' relative px-2 text-sm hover:border-t dark:text-black '>
 						<Link href='/#projects'>Projects</Link>
 					</li>
-					<li className=' relative px-2 text-sm hover:border-t  '>
+					<li className=' relative px-2 text-sm hover:border-t dark:text-black '>
 						<Link href='/resume'>Resume</Link>
 					</li>
-					<li className=' relative px-2 text-sm hover:border-t  '>
+					<li className=' relative px-2 text-sm hover:border-t dark:text-black '>
 						<Link href='/#contact'>My Info</Link>
 					</li>
 				</ul>
@@ -86,6 +85,7 @@ const NewNavbar = () => {
 				{/* TODO put something else here? github link? */}
 			</div>
 		</header>
+		
 	);
 };
 
