@@ -1,9 +1,5 @@
 import Link from 'next/link';
-import Image from 'next/image';
 import React, { useState, useEffect } from 'react';
-import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from 'react-icons/ai';
-import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
-import { BsFillPersonLinesFill } from 'react-icons/bs';
 // import { useRouter } from 'next/router';
 import DayNightToggle from 'react-day-and-night-toggle';
 import { useTheme } from 'next-themes';
@@ -81,7 +77,7 @@ const NewNavbar = () => {
 				</svg>
 			</nav>
 
-			<div className='fixed -ml-12 mr-12 invisible md:visible'>
+			<div className='-ml-12 mr-12 invisible md:visible'>
 				<DayNightToggle
 					onChange={() => setIsDarkMode(!isDarkMode)}
 					checked={isDarkMode}

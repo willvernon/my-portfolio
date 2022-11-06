@@ -3,7 +3,6 @@ import { AiOutlineMail } from 'react-icons/ai';
 import { BsFillPersonLinesFill } from 'react-icons/bs';
 import { FaBlackTie, FaGithub, FaLinkedinIn } from 'react-icons/fa';
 import Typewriter from 'typewriter-effect';
-import ReactParticles from './TS/ReactParticles';
 
 const Main = () => {
 	return (
