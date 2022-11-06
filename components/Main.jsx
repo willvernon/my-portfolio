@@ -7,9 +7,12 @@ import ReactParticles from './TS/ReactParticles';
 
 const Main = () => {
 	return (
-		<div className='w-full h-screen text-center '>
-			<div className='max-w-[1240] w-full h-full mx-auto p-2 flex justify-center items-center '>
-				<div className=''>
+		<div className='w-screen h-screen text-center '>
+			<div className='max-w-[1240] w-screen h-full  p-2 flex justify-center items-center '>
+				<div className=' invisible md:visible md:w-[12rem] h-auto -mr-[12rem]'>
+					<img src='/assets/MeMoji.jpg' alt='/' />
+				</div>
+				<div className='mr-4'>
 					<h1 className='py-0 text-gray-700 dark:text-white'>
 						Hi! I'm{' '}
 						<span className='text-[#e64c33]'>Will Vernon</span>

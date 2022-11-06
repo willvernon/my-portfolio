@@ -34,59 +34,31 @@ const Navbar = () => {
 		setNav(!nav);
 	};
 
-	useEffect(() => {
-		const handleShadow = () => {
-			if (window.scrollY >= 90) {
-				setShadow(true);
-			} else {
-				setShadow(false);
-			}
-		};
-		window.addEventListener("scroll", handleShadow);
-	}, []);
+	
 
 	return (
 		<div
 			style={{ backgroundColor: `${navBg}` }}
 			className={
 				shadow
-					? "fixed w-full h-20 shadow-xl z-[100] ease-in-out duration-300"
-					: "fixed w-full h-20 z-[100]"
+					? "fixed w-full h-12 shadow-xl z-[100] ease-in-out duration-300"
+					: "fixed w-full h-12 z-[100]"
 			}>
 			<div className='flex justify-between items-center w-full h-full px-8 2xl:px-16'>
 				<Link href='/'>
-					{/* <a>
+					<a>
 						<Image
 							src={NavLogo}
 							alt='/'
-							width='100%'
-							height='100%'
+							width='50%'
+							height='50%'
 							className='cursor-pointer'
 						/>
-					</a> */}
-					<p>William Vernon</p>
+					</a>
+					
 				</Link>
 				<div>
-					<ul style={{ color: `${linkColor}` }} className='hidden md:flex p-5'>
-						<li className='ml-10 text-sm uppercase hover:border-b'>
-							<Link href='/'>Home</Link>
-						</li>
-						<li className='ml-10 text-sm uppercase hover:border-b'>
-							<Link href='/#about'>About</Link>
-						</li>
-						<li className='ml-10 text-sm uppercase hover:border-b'>
-							<Link href='/#skills'>Skills</Link>
-						</li>
-						<li className='ml-10 text-sm uppercase hover:border-b'>
-							<Link href='/#projects'>Projects</Link>
-						</li>
-						<li className='ml-10 text-sm uppercase hover:border-b'>
-							<Link href='/resume'>Resume</Link>
-						</li>
-						<li className='ml-10 text-sm uppercase hover:border-b'>
-							<Link href='/#contact'>Contact</Link>
-						</li>
-					</ul>
+					
 					{/* Hamburger Icon */}
 					<div
 						style={{ color: `${linkColor}` }}
@@ -101,7 +73,7 @@ const Navbar = () => {
 			{/* Overlay */}
 			<div
 				className={
-					nav ? "md:hidden fixed left-0 top-0 w-full h-screen bg-[#222222]]" : ""
+					nav ? "md:hidden fixed right-0 top-0 w-full h-screen bg-[#222222]]" : ""
 				}>
 				{/* Side Drawer Menu */}
 				<div

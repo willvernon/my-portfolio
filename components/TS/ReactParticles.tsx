@@ -32,19 +32,24 @@ export default function ReactParticles() {
   const { innerWidth, innerHeight } = useWindowSize();
 
   return (
-    
+    <div className='-mt-40  w-screen relative'>
     <ParticleImage
       src='/assets/react-logo.png'
       width={Number(innerWidth)}
       height={Number(innerHeight)}
-      scale={0.75}
+      scale={1}
       entropy={20}
-      maxParticles={4000}
+      maxParticles={8000}
       particleOptions={particleOptions}
       mouseMoveForce={motionForce}
       touchMoveForce={motionForce}
-      background= '#00000000'
+      backgroundColor='transparent'
+      
     />
+    <div className='w-screen h-12 bg-red-800 relative'>
+    <button className='w-20 absolute  left-[50%] right-[50%]' >Hello</button>
+    </div>
+    </div>
     
   );
 }

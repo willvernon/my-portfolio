@@ -6,7 +6,7 @@ const about = () => {
 			id='about'
 			className='w-full md:h-screen p-16 flex items-center py-16'
 		>
-			<div className='max-w-[1240px] m-auto md: grid grid-cols-3 gap-8'>
+			<div className='max-w-[1240px] m-auto  grid grid-cols-2 gap-8'>
 				<div className='col-span-2'>
 					<h1 className='text-4xl tracking-wide uppercase text-[#F12307]'>
 						About
@@ -38,9 +38,7 @@ const about = () => {
 						Check out some of my latest projects.
 					</h3>
 				</div>
-				<div className='invisible md:visible w-full h-auto my-[35%]'>
-					<img src='/assets/MeMoji.jpg' alt='/' />
-				</div>
+				
 			</div>
 		</div>
 	);

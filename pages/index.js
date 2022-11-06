@@ -5,7 +5,7 @@ import Main from '../components/Main';
 import NavBar from '../components/Navbar';
 import Projects from '../components/Projects';
 import Skills from '../components/Skills';
-import NewNavbar from '../components/NewNavbar';
+import NewNavbar from '../components/Layout/NewNavbar';
 import ReactParticles from '../components/TS/ReactParticles';
 
 export default function Home() {
@@ -19,12 +19,13 @@ export default function Home() {
 				/>
 				<link rel='icon' href='/assets/MeMoji-Mac.png' />
 			</Head>
+			{/* <NavBar /> */}
 			<NewNavbar />
 			<Main />
 			<About />
 			<Skills />
 			<Projects />
-			<Contact />
+			{/* <Contact /> */}
 		</div>
 	);
 }
