@@ -4,6 +4,7 @@ import classNames from 'classnames';
 import React, { useState, useEffect } from 'react';
 import DayNightToggle from 'react-day-and-night-toggle';
 import { useTheme } from 'next-themes';
+import Link from 'next/link';
 
 // import styles from "./Navbar.module.css";
 
