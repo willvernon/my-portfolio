@@ -6,6 +6,7 @@ import useNavigation from '../hooks/useNavigation';
 import navigationData from '../data/navigation';
 import Navbar from '../components/Layout/Navbar';
 import Tabbar from '../components/Layout/Tabbar';
+
 // Pages
 import Main from '../components/Main';
 import About from '../components/About';
