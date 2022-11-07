@@ -1,6 +1,4 @@
-
 import { CgMonday } from 'react-icons/cg';
-import classNames from 'classnames';
 import { useRouter } from 'next/router';
 
 import React, { useState, useEffect } from 'react';

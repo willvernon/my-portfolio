@@ -2,21 +2,17 @@ import Head from 'next/head';
 import React from 'react';
 //Navigation
 import { FaDev } from 'react-icons/fa';
-import navButtons from '../components/Layout/web/data';
-// import Layout from '../components/Mobile/Layout';
-// import WebLayout from '../components/Layout/web/WebLayout';
-import MobileNavBar from '../components/Layout/Mobile/MobileNavBar';
 import NavBar from '../components/Layout/web/NavBar';
-
+import MobileNavBar from '../components/Layout/Mobile/MobileNavBar';
 // Pages
 import Main from '../components/Main';
 import About from '../components/About';
 import Contact from '../components/Contact';
 import Projects from '../components/Projects';
 import Skills from '../components/Skills';
-export default function Home() {
-	// const { currentRoute, setCurrentRoute } = useNavigation();
 
+export default function Home() {
+	
 	return (
 		<div>
 			<Head>
@@ -27,7 +23,7 @@ export default function Home() {
 				/>
 				<link rel='icon' href='/assets/MeMoji-Mac.png' />
 			</Head>
-			{/* Container */}
+
 			<div className='bg-gray-200 h-screen'>
 				<NavBar />
 				<MobileNavBar />
@@ -36,7 +32,6 @@ export default function Home() {
 					<FaDev />
 				</div>
 			</div>
-
 			{/* <Main /> */}
 			{/* <About /> */}
 			{/* <Skills /> */}

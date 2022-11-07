@@ -1,10 +1,5 @@
-//NAV flex md:hidden flex-row items-center justify-around px-8 h-12 bg-white visible md:invisible fixed bottom-0 w-full rounded-t-3xl text-2xl
-import NavButton from './NavButton';
-import { CgMonday } from 'react-icons/cg';
-import classNames from 'classnames';
-import { useRouter } from 'next/router';
-
 import React, { useState, useEffect } from 'react';
+import { useRouter } from 'next/router';
 import DayNightToggle from 'react-day-and-night-toggle';
 import { useTheme } from 'next-themes';
 import Link from 'next/link';
@@ -22,12 +17,12 @@ const MobileNavBar = () => {
 	}
 	return (
 		<nav className='flex md:hidden flex-row items-center justify-around px-8 h-12 bg-white visible md:invisible fixed bottom-0 w-full rounded-t-3xl text-2xl'>
-			<ul className='flex flex-row self-end h-12'>
+			<ul className='flex flex-row self-end h-12 '>
 				{navLinks.map((link, index) => {
 					return (
 						<Link href={link.path}>
 							<li
-								className='w-22 text-gray-400 hover:text-gray-700 cursor-pointer font-medium tracking-wide px-6 text-sm flex justify-center rounded-lg flex-col text-center'
+								className='w-22 text-gray-400 hover:text-gray-700 cursor-pointer font-medium tracking-wide px-4 text-sm flex justify-center rounded-lg flex-col text-center pt-1'
 								// className={` ${
 								// 	link.router.pathname === link.path
 								// 		? 'text-gray-700 border-b-[5px] border-gray-700 bg-gradient-to-b from-white to-gray-100 dark:from-[#222222]'
@@ -43,13 +38,7 @@ const MobileNavBar = () => {
 					);
 				})}
 			</ul>
-			<div className='bg-white dark:bg-[#222222] hover:bg-gray-50 border-2 border-gray-700 text-sm text-gray-700 p-1 my-1 rounded-3xl font-medium tracking-wide leading-none'>
-				<DayNightToggle
-					onChange={() => setIsDarkMode(!isDarkMode)}
-					checked={isDarkMode}
-					className=' '
-				/>
-			</div>
+			
 		</nav>
 	);
 };
