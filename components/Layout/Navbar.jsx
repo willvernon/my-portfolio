@@ -8,7 +8,9 @@ import DayNightToggle from 'react-day-and-night-toggle';
 import { useTheme } from 'next-themes';
 import Link from 'next/link';
 
-// import styles from "./Navbar.module.css";
+
+// import NavButton from './NavButton';
+
 
 const Navbar = ({ navigationData, currentRoute, setCurrentRoute }) => {
 	const { theme, setTheme } = useTheme();
