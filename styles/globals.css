@@ -23,6 +23,8 @@ html {
 		@apply dark:bg-[#222222]  dark:text-[#F7F7F7];
 	}
 
+	
+
 	h1,
 	h2,
 	h3,
@@ -44,10 +46,13 @@ html {
 		@apply cursor-pointer text-gray-700 dark:text-white;
 	}
 
-	button {
+	/* button {
 		@apply shadow-md shadow-gray-600 rounded-xl uppercase bg-gradient-to-r from-[#5651e5] to-[#709dff] text-[#F7F7F7];
-	}
+	} */
 }
+
+
+
 :root {
 	--font-mono: 'JetBrains Mono', monospace;
 	--pure-white: #ffffff;

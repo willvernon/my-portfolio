@@ -1,21 +1,17 @@
 import Head from 'next/head';
-import About from '../components/About';
-import Contact from '../components/Contact';
-import Main from '../components/Main';
-import NavBar from '../components/Navbar';
-import Projects from '../components/Projects';
-import Skills from '../components/Skills';
-import NewNavbar from '../components/Layout/NewNavbar';
-import MobileNavbar from '../components/Layout/MobileNavbar';
-
 import React from 'react';
+//Navigation
 import { FaDev } from 'react-icons/fa';
-
 import useNavigation from '../hooks/useNavigation';
 import navigationData from '../data/navigation';
-
-import Navbar from '../components/Navbar';
+import Navbar from '../components/Layout/Navbar';
 import Tabbar from '../components/Layout/Tabbar';
+// Pages
+import Main from '../components/Main';
+import About from '../components/About';
+import Contact from '../components/Contact';
+import Projects from '../components/Projects';
+import Skills from '../components/Skills';
 
 export default function Home() {
 	const { currentRoute, setCurrentRoute } = useNavigation();
@@ -32,7 +28,7 @@ export default function Home() {
 			</Head>
 			{/* Container */}
 			<div className='bg-gray-200 h-screen'>
-				<MobileNavbar
+				<Navbar
 					navigationData={navigationData}
 					currentRoute={currentRoute}
 					setCurrentRoute={setCurrentRoute}
@@ -47,9 +43,7 @@ export default function Home() {
 					<FaDev />
 				</div>
 			</div>
-			{/* <NavBar /> */}
-			{/* <MobileNavbar /> */}
-			{/* <NewNavbar /> */}
+
 			{/* <Main /> */}
 			{/* <About /> */}
 			{/* <Skills /> */}
